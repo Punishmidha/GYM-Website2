@@ -1,0 +1,46 @@
+<!-- alag alag screen pe alag alag interface -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Design</title>
+    <style>
+        html{
+            font-size: 10px;
+        }
+        .container{
+            font-size: 10px;
+            border: 5px solid rebeccapurple;
+            /* vh,vw mtlb hmari desktop ki screen k acording like hmne utne area ka border bnana h jitni hme dikh rhi h site to=100vh(height) and vw(width k liye) */
+
+            width: 100vw;
+            height: 100vh;
+
+        }
+        h1{
+            text-align: center;
+            
+        }
+        #first{
+            /* present k respect me */
+            /* 10 em matlab 10 times size of parent 10*10=100 px hojega */
+            font-size: 3em;  /*3*10=30 ayegi...inspect me jakt select kro jise krna h or padding box k neeche dikhega size vgera*/
+            padding: 3em; /*paddding 90 kuki  abhi fontsize change ho chuka h to uske respect me lega..30*3=90 par agr ye b 30 chahiye mtlb start k respect me chahiye to neeche*/
+        }
+        #second{
+            /* rem hota h html (upr likha jo) k respect me sab kuch ...yhi preffered hai*/
+
+            font-size: 3rem; /*  10*3=30  */
+            padding: 3rem; /*  10*3=30  */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 id="first">This is 1st heading</h1>
+        <h1 id="second">This is 2nd heading</h1>
+        <h1 id="third">This is 3rd heading</h1>
+    </div>
+</body>
+</html>

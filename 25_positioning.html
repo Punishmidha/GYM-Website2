@@ -1,0 +1,65 @@
+<!-- important topic -->
+<!-- Types of positions: static(defualt hoti h),relative,absolute,fixed,sticky -->
+
+<!-- 1.. relative->jab bhi ye hile ga to baki disturb nhi hoyege or iski jgah pe blank space aajega -->
+
+<!-- 2.. or absolute me space bhra jayega or sab ki movement hojegi or kisi or k upr chad jayega or isme ham left right up down bhi de skte hai -->
+
+<!-- 3.fixed ... jab ham scroll kre to ek box upr ka upr chipka reh jaye,fix reh jaye -->
+
+<!-- 4.sticky.. ye bhi fixed trah hai bs ye fix ni hota ye sth sth screen k scroll hota rehta h hmari--> 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            height: 12321px;/*ab scroll krke dekho*/
+        }
+        .box {
+            display: inline-block;
+            /*horizental kar dega */
+            border: 2px solid black;
+            width: 100px;
+            height: 100px;
+            margin: 2px;
+        }
+
+        /* #box3{
+            
+            /* position: relative;
+            left: 1px;
+            bottom: 2px; 
+        } */
+        /* #box3{
+            
+            /* position: absolute;
+            left: 1px;
+            bottom: 2px; 
+        } */
+        /* #box3 {
+
+            position: fixed;
+            right: 4px;
+        } */
+        /* #box3 {
+            position: sticky;
+            top: 14px; */
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">3</div>
+        <div class="box" id="box4">4</div>
+    </div>
+
+</body>
+
+</html>

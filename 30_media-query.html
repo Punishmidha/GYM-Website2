@@ -1,0 +1,55 @@
+<!-- ye ek tareek hotah ki jab bhibhmari screen prescribe hoyegi ki itni width ho to ye css file open hojaye ya ye specific task krna hojaye -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+    <style>
+        .box{
+            font-size: 40px;
+            background-color: aquamarine;
+            color: black;
+            text-align: center;
+            display: none; /*sab gayyab hojega pr neech ham media screen dallege abhi*/
+        }
+        /* if else condition k trah */
+
+        @media( max-width:300px){
+            #box-1{
+                display: block;
+                background-color: rgb(42, 30, 212);
+            }
+        }
+
+        @media(min-width:300px) and (max-width:500px){
+            #box-2{
+                display: block;
+                background-color: rgb(235, 35, 35);
+                color: aliceblue;
+            }
+        }
+        @media(min-width:500px) and (max-width:800px){
+            #box-3{
+                display: block;
+                background-color: rgb(10, 232, 121);
+                color: aliceblue;
+            }
+        }
+        @media(min-width:800px) and (max-width:1000px){
+            #box-4{
+                display: block;
+                background-color: rgb(199, 241, 11);
+                color: aliceblue;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="box-1">IPHONE</div>
+    <div class="box" id="box-2">TABLET</div>
+    <div class="box" id="box-3">COMPUTER</div>
+    <div class="box" id="box-4">WIDESCREEN</div>
+</body>
+</html>

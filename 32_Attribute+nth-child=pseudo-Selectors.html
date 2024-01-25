@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More Selectors</title>
+    <style>
+        .container{
+            display: block;
+            width: 233px;
+            margin: auto;
+        }
+    
+        input{
+            display: block;
+            
+        }
+        /* kisi particular ek cheezz k liye */
+        input[type='text']{
+            background-color: aquamarine;
+        }
+
+        /* sirf target likhe ge to vo sab target kliye hoga */
+        a[target]
+        {
+            background-color:yellowgreen;
+        }
+
+        /* specific target k liye */
+        a[target='fb']
+        {
+            color:red;
+        }
+        
+        /* ye li k 3rd child k liye property lgayega */
+        li:nth-child(3)
+        {
+            background-color: orchid;
+        }
+
+        /* har even no pe color lr dega */
+        li:nth-child(2n)
+        {
+            background-color: rgb(46, 236, 8);
+        }
+
+        /* upr wale jese he */
+        li:nth-child(3n+1)
+        {
+            color: orangered;
+        }
+
+        /* or even odd k liye ye bhi kar skte h */
+        li:nth-child(odd)
+        {
+            background-color: antiquewhite;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- target blank wala mtlb ki vo ;ink next tab me khule hmmara link -->
+        <h1><a href="http://google.com" target="gg">Go To Google</a></h1>
+
+        <h1><a href="http://facebook.com" target="fb">Go To Facebook</a></h1>
+
+
+        <form action="" class="form">
+            <input type="text" placeholder="Enter yourname">
+            <input type="password" placeholder="enter password">
+            <input type="submit" value="submit">
+        </form>
+        <ul>
+            <li class="item" id="item-1">item-1</li>
+            <li class="item" id="item-2">item-2</li>
+            <li class="item" id="item-3">item-3</li>
+            <li class="item" id="item-4">item-4</li>
+            <li class="item" id="item-5">item-5</li>
+            <li class="item" id="item-6">item-6</li>
+            <li class="item" id="item-7">item-7</li>
+            <li class="item" id="item-8">item-8</li>
+            <li class="item" id="item-9">item-9</li>
+        </ul>
+    </div>
+</body>
+</html>

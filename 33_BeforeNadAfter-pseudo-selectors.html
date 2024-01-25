@@ -1,0 +1,104 @@
+<!-- kai bar background me image puri ni set hoti tab ye use krte h mainly bafore and after wala -->
+
+<!-- opacity use hoti hai ki agar backround lgaya par likha hua ni dikh rha to opacity lgado
+opacity image ko light kar deti hai -->
+
+ <!-- agr ese direct dallte h to pic hmari complete web site pe ni aati..thodi c jgah bach jati h isliye ham use kre ge ab ....
+ header se pehle content insert kre ge or us content me background image lga dege or uski position kar dege absolute,isliye header pe lgaye ge before pseudocode
+*/-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before And after PSuedo Selectors</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            color: rgb(168, 222, 254);
+            
+            
+            /* agr ese direct dallte h to pic hmari complete web site pe ni aati..thodi c jgah bach jati h isliye ham use kre ge ab
+            --> header se pehle content insert kre ge or us content me background image lga dege or uski position kar dege absolute
+            */
+
+            opacity: 0.9;
+        }
+        .navigation{
+            display: flex;
+
+        }
+        header::before{
+            content: "";/*kch ni dalle ge yha*/
+            background: url('https://source.unsplash.com/collection/190727/1600x900')no-repeat center center/cover;
+            /* abhi aayega ni wallpaper ..hme width height set krni pde gi tab ayega background me wallpaper */
+            position: absolute;
+            width: 100%;
+            height: 100%;
+
+            /* jo wallpaper etc jgah le rha tha vo khtm hojegi is se */
+            top: 0;
+            left: 0;
+            
+            /* ab hmara sara content iske peeche chal gya to use dikhane k liye hm z-index use krege  */
+            z-index: -1;
+
+            /* ab dikh gya  */
+            /* par hmara text dikh ni rha jada wallpaper k hisab se to ham wallpaper light kar dege means opacity kam kar dege
+            
+            jitna kam utna blur background*/
+            opacity: 0.4;
+            
+             
+            
+
+        }
+        li{
+            list-style: none;
+            padding: 6px;
+            margin: 12px;
+        }
+        section{
+            margin: 3px 23px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border: 2px solid rgb(239, 6, 161);
+
+        }
+
+        /* is se section se pehle kuch bhi add ho jayega */
+        section::before{
+            content: "This is content";
+            color: bisque;
+        }
+        h3{
+            font-size: 2rem;
+        }
+        p{
+            text-align: center;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item">Home</li>
+                <li class="item">About</li>
+                <li class="item">Services</li>
+                <li class="item">Contact Us</li>
+            </ul>
+        </nav>
+        <section>
+            <h3>Welcome to Coding world</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita esse illo, nisi quos velit quis voluptas, rerum, consectetur at dolor eaque? In exercitationem iure quod, quia dolorum porro! Vel, cumque?</p>
+        </section>
+    </header>
+    <hr>
+</body>
+</html>

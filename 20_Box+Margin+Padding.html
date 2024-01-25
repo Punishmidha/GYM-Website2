@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <!-- width mtlb hmare text k box ki breath -->
+    <!-- margin k andr border,border k andr padding ,padding k andr hmara content hua -->
+    <style>
+        body {
+            background-color: #39579d;
+        }
+
+        .container {
+            background-color: rgb(171, 184, 212);
+            border: 3px solid #243c76;
+            border-radius: 200px;
+
+            /* padding dege to likha hua andr chal jayega thoda */
+            /* left, right,top,bottom b hojayegi ye  */
+            padding: 58px;
+            /* padding: 34px 19px;  (paddingORmargin=top+right,bottom+left(in dono ki same or un dono ki same)) */
+
+            /* margin mtlb boarder k bahr b thoda space ho...boxes ko alag alag krdega ab */
+            margin-left: 9px;
+            margin-top: 9px;
+
+
+            /* agar ham padding change krege to width b change hoyegi automatically */
+            /* to avoid this */
+            box-sizing: border-box;
+
+            /* ye star wale se default sbke liye hojata h kch bhi */
+            * {
+                box-sizing: border-box;
+            }
+
+
+
+        }
+
+        #first {
+            margin: 12px;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <p id="first">
+        <h3>This is my first headiing</h3>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam obcaecati distinctio, delectus reprehenderit
+        eligendi quo. Magnam quis, quae pariatur molestias error dignissimos quibusdam quaerat, eos, harum fuga culpa!
+        Eos, soluta!
+        </p>
+    </div>
+    <div class="container">
+        <h3>This is my second headiing</h3>
+        <p id="second">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam obcaecati distinctio, delectus
+            reprehenderit eligendi quo. Magnam quis, quae pariatur molestias error dignissimos quibusdam quaerat, eos,
+            harum fuga culpa! Eos, soluta!
+        </p>
+
+
+    </div>
+    <div class="container">
+        <h3>This is my third headiing</h3>
+        <p id="third">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam obcaecati distinctio, delectus
+            reprehenderit eligendi quo. Magnam quis, quae pariatur molestias error dignissimos quibusdam quaerat, eos,
+            harum fuga culpa! Eos, soluta!
+        </p>
+
+
+    </div>
+
+</body>
+
+</html>

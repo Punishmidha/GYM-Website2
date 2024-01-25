@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set timeout and clear timeout</title>
+</head>
+<body>
+    <div class="container">
+        This is a container
+        Time now is <span class="time"></span>
+    </div>
+    <script>
+        console.log("This is jdoqn")
+
+        // agar ham chahte  h ki hmara fun kuch time k bad run ho tab ham ye chiz use karte h
+        // setTimeout --> allow us to run the function once after interval of time
+        // setTimeout --> allow us to run the function repeatedly after interval of time
+
+        function greet(name)
+        {
+            console.log("Hello uncle " + name);
+
+        }
+
+        // bs  fun ka name likhna h bracket ni lgaani mtlb call ni kar rhe ham bs name likh rhe h uska
+        timeout = setTimeout(greet, 5000 , "namaste"); //5000 mili second bad run hoga mtlb 5 sec bad show hoga console me
+
+        // jese hmne hmari site k liye timer lga rkha h ki 10 sec bad user se puche ge ki login krlo lekin use us 10 sec se pehle he login krlia to hamra msg to waste chla gya na isliye we use or fir ab hmara msg ni ayyega
+        // clearTimeout(timeout);
+
+
+        // bar bar msg aata jayega bar bar
+        setInterval(greet,1000,"puru")
+
+        function displayTime()
+        {
+            time = new Date();
+            console.log(time);
+            document.getElementById('time'.innerHTML = time)
+        }
+
+        // mai set kar duga ki har sec me mera time upcate ho jaye by my function
+        setInterval(displayTime,5000);
+
+
+        // aram se clock bna skte h ham ese
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+/* sari design ki zimevari ham css ko de dete h */
+/* effective h boht ye */
+
+p{color:black;}
+/* selector{property:value} */
+
+/* selector ka mtlb khaa...kha krna h color change..para pe */
+/* propert mtlb ki krna kya h uska colour,size,background */
+/* value mtlb kitna krna h jo b krna h */
+
+/* ................................................. */
+/* Three Ways TO Add Markup (Markup mtlb html code) */
+
+/* 
+1> inline
+2> internal
+3> external ( sabse achaa) seprate css me bnakr add kre ge
+step1> write css file .css
+step2> include that css file in markup(html)
+*/

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    .box{ 
+        /* -- se vairiable name de skte h */
+        --box-color: rgb(231, 17, 9);
+        width: 200px;
+        height: 100px;
+        border: 2px solid rebeccapurple;
+        margin: 2px 9px;
+        background-color: rgb(182, 206, 228);
+
+        /* using box variable...yhi same colour ya fir property use krne k liye ham bar bar yhi variable use kr skte h,or agr upr change kia color to jha jha  variable use kia h vha har jgah change hojega */
+        box-shadow: 4px 4px var(--box-color);
+
+        /* ye sirf ek class me rehta h dusri class me bhi use krna h or dbara likhna pdega yhi */
+
+
+    }
+    /* display flex krne se horizental ho jate h */
+    .container{
+        display: flex;
+    }
+    :root{
+            /* roots me jo bhi varibable bnaye ga vo sab jgah work kare ge  */
+            --primary-color:yellow;            
+            --danger-color:rgb(255, 140, 0);            
+
+        }
+    #third{
+         background-color: var(--danger-color); 
+    }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">first</div>
+        <div class="box">second</div>
+        <div class="box" id="third">third</div>
+    </div>
+</body>
+</html>

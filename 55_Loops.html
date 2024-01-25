@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        THis is about loops
+    </div>
+    <script>
+        // let  i=0;
+        // for(i=0;i<8;i++)
+        // {
+        //     console.log(i);
+        // }
+
+        // length k bad bracket ni ayega
+        let frnds = ["mohan" , "roham " , "sohan"];
+        for(let i=0;i<frnds.length;i++)
+        {
+            console.log(frnds[i]);
+        }
+
+        // is chiz ko easy b likh skte h without loops
+        frnds.forEach(function f(element)
+        {
+            console.log("ye bhi " + element);
+        })
+
+        for(element of frnds)
+        {
+            console.log("another type forloop" + element);
+        }
+
+
+        // is type ko iterate krne k liye
+        let employee = {
+            name:"puru",
+            age:"20",
+            salary:"chw"
+        }
+
+        // use this loop to iterate over subjects in js
+        for(key in employee)
+        {
+            console.log(`The ${key} of employee is ${employee[key]}`);
+        }
+
+        // while loop
+        // do while loop ek moka hmesha deta h jese bhi condition ho ek bar to run hoga he
+          
+    </script>
+</body>
+</html>

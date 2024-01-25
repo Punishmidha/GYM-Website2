@@ -1,0 +1,249 @@
+/* wallpapers k liye hmesha before wala he use kro */
+
+/* css reset */
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    background-color: rgb(0, 8, 13);
+}
+
+/* css variables */
+/* use na kre shyd ise */
+:root {
+    --navbar-height: 59px;
+}
+
+
+/*Navigation bar:  logo and image */
+#logo img {
+    height: 58px;
+    width: 63px;
+    border-radius: 50%;
+    margin: 5px 31px;
+}
+
+/* Navigation Bar */
+#navbar {
+    display: flex;
+    align-items: center;
+    position: relative;
+    /*sabse upr wala background set dimensions hojega*/
+}
+
+/* Navigation Bar: list Styling */
+#navbar ul {
+    display: flex;
+    font-family: 'Baloo Bhai', cursive;
+
+}
+
+/* pura background wallpaper lgane k liye dhang se */
+#navbar::before {
+    content: "";
+    background-color: rgb(16, 1, 1);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    /*is se hmara content upr aajega black wallpaper k*/
+    opacity: 0.4;
+    /*background light krne k liye*/
+}
+
+  #navbar ul li {
+    list-style: none;
+    font-size: 17px;
+
+}
+
+#navbar ul li a {
+    color: aliceblue;
+    display: block;
+    padding: 5px 14px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover {
+    color: black;
+    background-color: aliceblue;
+
+}
+
+/* we will edit home section */
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 100px;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+
+}
+
+#home::before {
+    content: "";
+    /* no-repeat center center/cover se puri image clear lag jayegi...half ni lgegi */
+    background: url(./background-french-fries.jpg) no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.6;
+}
+
+#home p {
+    color: rgb(243, 243, 247);
+    text-align: center;
+    font-family: 'Caveat', cursive;
+    /* sfont-family: 'Dancing Script', cursive; */
+    /* font-family: 'Lilita One', cursive; */
+    font-size: 30px;
+    font-size: 25px;
+    background-color: rgb(22, 23, 24);
+    border-radius: 20px;
+    /* border: 2px solid whitesmoke; */
+    opacity: 0.;
+}
+
+/* utility classes */
+/* isko throught out krege or last me rkhege */
+.h-primary {
+    font-size: 2.8rem;
+    padding: 3px;    
+    margin: 50px; 
+    color: aliceblue;
+
+
+}
+.welcome {
+    font-family: 'Dancing Script', cursive;
+    color: whitesmoke;
+    font-size: 90px;
+
+}
+
+.h-primary1 {
+    font-size: 2.8rem;
+    padding: 32px;    
+    margin-top: 10px;
+    color: aliceblue;
+
+
+}
+.btn{
+    margin: 22px 12px;
+    padding: 6px 12px;
+    border: 3px solid black;
+    background-color: rgb(11, 11, 11);
+    color: rgb(241, 235, 241);
+    border-radius: 12px;
+    cursor: pointer;
+
+}
+.btn:hover{
+    background-color: aliceblue;
+    color: black;
+    border-color: aliceblue;
+}
+
+.center{
+    text-align: center;
+}  
+
+/* services container */
+#services{
+    margin: 0px 20px;
+    display: flex;
+}
+
+#services .box{
+    /* border: 2px solid rgb(0, 255, 72); */
+    /*  width: 200px; */
+    padding: 10px 20px;
+    margin: 1px 24px;
+    border-radius: 23px;
+    background-color: rgb(1, 10, 10);
+    color: rgb(207, 215, 223);
+    
+}
+
+#services .box img{
+    height: 150px;
+    display: block;
+    width: 250px;
+    margin: auto;
+    
+}
+
+
+#client-section{
+    height: 344px;
+}
+
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url(./background2.jpg)no-repeat center center/cover;
+    width: 100%;
+    height: 54%;
+    z-index:-1 ;
+    opacity: 0.3;
+}
+#clients img{
+    height: 60px;
+    width: 60px;
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.client-item{
+    padding: 34px;
+
+}
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.4;
+    background: url(./background-burger.jpg) no-repeat center center/cover;
+    
+}
+footer{
+    background: black;
+    color: rgb(248, 242, 242);
+    padding:3px 20px ;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+}
+#contact-box input,#contact-box textarea{
+    width: 100%;
+    padding: 3px;
+    border-radius: 9px;
+    background-color: rgb(179, 185, 185);
+
+}
+#contact-box form{
+    width: 20%;
+}
+#contact-box label{
+    font-size: 18px;
+    font-family: 'Baloo Bhai', cursive;
+    color: rgb(252, 250, 247);
+}

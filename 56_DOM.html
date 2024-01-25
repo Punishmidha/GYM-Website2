@@ -1,0 +1,51 @@
+<!-- Document object model -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulating dom</title>
+</head>
+<body>
+    <!-- pure body k content ko tree strcture me access kar sakte h js se-->
+    <div  id="main" class="container">
+        <ul id="nav">
+            <li>Home</li>
+            <li>About</li>
+            <li>Services</li>
+            <li>More about us</li>
+            <li>Contact Us</li>
+        </ul>
+    </div>
+    <div class="container">
+        Another container
+    </div>
+
+    <script>
+        // is se hmare console me main wala part likha hua show hoga
+        let main = document.getElementById('main');
+        console.log(main);
+
+        let nav = document.getElementById('nav')
+        // ab ham nav k andfr ki html ko chng kar sakte h js me reh kar
+        console.log(nav);
+
+        let container = document.getElementsByClassName('container');
+        console.log(container)
+
+        // console me bhi type kar kar k cheeze kar skte hai
+
+        // css selectors bhi use kar sakt h elemets select krne k  liye
+    
+
+        // id k liye .console use kia tha
+        let sel = document.querySelector('.container');
+        console.log("Selector returns",sel);
+
+        // get elements by class name , query selector , get element by ide ..in teeno ko majority time use kare ge website k liye
+        
+
+                
+    </script>
+</body>
+</html>

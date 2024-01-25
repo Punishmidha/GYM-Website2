@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Punish - Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="./p.css">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Lilita+One&family=Poppins:ital,wght@1,300;1,600&family=Tiro+Devanagari+Hindi&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+        }
+
+        .logo img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .left {
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+
+        .right {
+            display: none;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            padding: 10px;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .firstSection {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .leftSection {
+            flex: 1;
+            text-align: center;
+        }
+
+        .rightSection {
+            flex: 1;
+            text-align: center;
+        }
+
+        .rightSection img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .secondsection {
+            padding-top: 20px;
+        }
+
+        .box {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .vertical {
+            flex-basis: calc(33.3333% - 20px);
+            margin-bottom: 20px;
+        }
+
+        .vertical img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .footer {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+        }
+
+        .footer ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        .footer li {
+            margin-right: 20px;
+        }
+
+        .socialmedia {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .socialmedia a {
+            color: #333;
+            margin: 0 10px;
+            font-size: 20px;
+        }
+
+        .footer-right {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        /* Add responsive styles */
+        @media screen and (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .right {
+                display: block;
+                margin-top: 10px;
+            }
+
+            .left {
+                order: 1;
+            }
+
+            .right {
+                order: 2;
+            }
+
+            nav ul {
+                margin-top: 10px;
+                justify-content: center;
+            }
+
+            main {
+                padding: 10px;
+            }
+
+            .firstSection {
+                flex-direction: column;
+            }
+
+            .leftSection,
+            .rightSection {
+                text-align: center;
+                margin-bottom: 20px;
+            }
+
+            .box {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="logo.png" alt="">
+            </div>
+            <div class="left"> Punish Midha</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Service</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hy, I study in <span class="HighlightName">VIT Chennai</span>
+                <div>and I am a passionate</div>
+                <span id="element"></span>
+                <div class="buttons">
+                    <a href="./Resume.pdf" target="_blank" download="Resume">
+                        <button type="button" class="btn1" id="btn">Download Resume</button>
+                    </a>
+                    <button class="btn2" id="btn" onclick="parent.open ('https://www.linkedin.com/in/punish-midha-381777245?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app')">Visit LinkedIn
+                    </button>
+                </div>
+            </div>
+            <div class="rightSection"><img src="developer.png" alt=""></div>
+        </section>
+        <hr>
+        <section class="secondsection">
+            <span class="text-gray">What I have done so far</span>
+            <h1>Work Experience</h1>
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="developer2.png" alt="">
+                    <div class="vertical-title">
+                        HTML Developer 2010-2012
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor officia numquam, facere modi porro eum provident quod magnam corporis sequi architecto soluta harum a rem culpa, placeat corrupti quisquam id!
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="developer2.png" alt="">
+                    <div class="vertical-title">
+                        HTML Developer 2010-2012
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor officia numquam, facere modi porro eum provident quod magnam corporis sequi

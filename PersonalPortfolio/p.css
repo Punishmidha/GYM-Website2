@@ -1,0 +1,282 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(22, 13, 46);
+    color: white;
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 70px;
+    background-color: rgb(41, 18, 88);
+    font-family: 'Poppins', sans-serif;
+
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    /* dots htane k liye */
+    list-style: none;
+    margin: 0px 23px;
+
+
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: whitesmoke;
+    padding: 0px 4px;
+
+
+}
+
+nav ul li a:hover {
+    color: rgb(166, 160, 184);
+    border-radius: 8px;
+
+}
+
+.left {
+    font-size: 1.4rem;
+    margin-right: 263px;
+
+}
+
+.firstSection {
+    display: flex;
+    justify-content: space-around;
+    margin: 120px 0px;
+    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+    align-items: center;
+
+}
+
+/* sirf 1st div liye */
+.firstSection>div {
+    width: 34%;
+
+}
+
+.leftSection {
+    font-size: 2.8rem;
+}
+
+.leftSection .buttons {
+    margin-top: 40px;
+}
+
+.leftSection .btn1 {
+    padding: 8px 10px;
+    border-radius: 6px;
+    background-color: rgb(92 83 111);
+    border: 1px solid rgb(92 83 111);
+    font-size: 14px;
+    color: white;
+    margin: 0px 4px;
+
+}
+.leftSection .btn2 {
+    padding: 8px 10px;
+    border-radius: 6px;
+    background-color: rgb(211, 208, 218);
+    border: 1px solid rgb(11, 3, 3);
+    font-size: 14px;
+    color: rgb(11, 2, 2);
+    margin: 0px 4px;
+    
+
+}
+
+.leftSection #btn:hover {
+    background-color: rgb(118, 118, 121);
+    color: rgb(54, 5, 100);
+    
+}
+
+
+.rightSection img {
+    width: 80%;
+    padding: 0px 30px;
+}
+
+.HighlightName {
+    color: rgb(134, 134, 235);
+}
+
+#element {
+    color: rgb(134, 134, 235);
+}
+
+.secondsection {
+    max-width: 84vw;
+    margin: auto;
+    height: 80vh;
+}
+
+main hr {
+    border: 0;
+    background-color: rgb(134, 134, 235);
+    height: 0.2px;
+    margin: 29px 48px;
+}
+
+.text-gray {
+    color: gray;
+}
+
+.secondsection .box {
+    background-color: rgb(251, 245, 245);
+    width: 90vw;
+    height: 1px;
+    margin: 150px -31px;
+    display: flex;
+}
+
+.secondsection .vertical {
+    height: 92px;
+    width: 1px;
+    background-color: aliceblue;
+    margin: 0px 108px;
+}
+
+.image-top {
+    width: 51px;
+    position: relative;
+    top: -63px;
+    left: -25px 
+}
+
+.box {
+
+    font-size: 19px;
+}
+
+.vertical-title {
+    position: relative;
+    top: 35px;
+    width: 186px;
+    left: -51px;
+    margin: 5px 0px;
+}
+
+.vertical-desc {
+
+    position: relative;
+    top: 56px;
+    width: 126px;
+    font-size: 13px;
+    color: grey;
+    text-align: center;
+    left: -58px;
+}
+
+#WebDevelopment{
+    left: -57px;
+}
+#python{
+    left: -19px;
+}
+#cpp{
+    left: -11px;
+}
+#java{
+    left: -13px;
+}
+#datascience{
+    left: -36px;
+}
+
+/* last portion */
+footer {
+    background-color: rgb(40 38 71);
+    margin-top: 190px;
+}
+
+.footer {
+    display: flex;
+    padding: 40px 45px;
+    justify-content: space-evenly;
+}
+
+.footer>div {
+    width: 100px;
+    padding-bottom: 200px;
+}
+
+.footer li {
+    list-style: none;
+    padding: 8px 0px;
+    color: #b7c7ce;
+}
+
+
+footer h3{
+    color: #f0ecec;
+    margin-bottom: 10px;
+    width: 200px;
+}
+
+footer .footer-right {
+    color: gray;
+    text-align: center;
+    padding: 16px 0px;
+    background-color: rgb(216, 228, 239);
+
+}
+
+.logo img {
+    width: 68px;
+}
+
+.socialmedia {
+    display: flex;
+    list-style: none;
+    margin: 0px 40px;
+    /* margin-top: -111px; */
+}
+
+.fa {
+    margin: 10px;
+    padding: 3.5px;
+    color: white;
+
+}
+.fa:hover {
+opacity: 0.6;
+}
+
+#Google{
+    background-color: #d70a0a;
+    border-radius: 7px;
+}
+
+#Linkedin{
+    background-color: #007bb5;
+    border-radius: 3px;
+
+}
+#Whatsapp{
+    background-color: rgb(92, 182, 59);
+    border-radius: 7px;
+
+
+}
+#Github{
+    background-color: black;
+    
+
+}
+a{
+    color: rgb(22, 13, 46);
+}
+

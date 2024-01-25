@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Events</title>
+</head>
+<style>
+    #btn{
+        padding: 4px;
+        color:aliceblue;
+        border: 2px solid rgb(44, 76, 104);
+        background-color: rgb(65, 111, 150);
+        font-weight: bold;
+        border-radius: 8px;
+
+    }
+    body{
+        background-color: aliceblue;
+    }
+</style>
+<body>
+    <!-- ek signal ki kush hua h jese subscribe karna -->
+    <!-- ya fir jese button click hua to hame pta lag jega ki click hua h -->
+
+    <!-- Browser Events:-
+    click
+    contextmenue
+    mtlb mouse bahr nikla kisi element k ya choda click  -->
+    <!-- mouseover/mouseout  
+     mtlb mouse press kia ya upr aaya -->
+    <!-- mousedown/mouseup
+
+    submit
+    focus
+    DOMContentLoaded
+    transiitoned --> 
+    <div class="container">
+        <h1>THis is heading</h1>
+        <p id="para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate quae vel omnis laboriosam, debitis nam optio est dolor dolorum nihil fugiat inventore voluptatum ullam distinctio illum, non quis vero assumenda aperiam. Eaque, assumenda earum facere voluptatibus eum repellendus deserunt fugiat praesentium laborum officiis temporibus tempore dolores iusto voluptatem, ipsa distinctio quod itaque, exercitationem mollitia odio! Rerum repudiandae voluptate enim consequuntur facilis corrupti, culpa quo atque voluptates accusamus vel, dolorem aut tenetur obcaecati officiis nesciunt quod! Modi aliquid, natus dolorem dignissimos consequuntur eveniet officiis beatae enim nihil dolores recusandae praesentium maxime aperiam laudantium, illum illo veniam ducimus nemo, quasi quis officia nostrum porro magnam! Sapiente consectetur, minima dicta placeat hic debitis numquam velit qui corporis assumenda dolorum tempore voluptate ex fugiat quam blanditiis dolor amet vitae iste exercitationem quod accusantium officiis voluptas cum.</p>
+    </div>
+
+    <!-- ham chahte h jese he ye button dbaye to ye text hide ya show hojaye ye hoga hide function se -->
+    <button id="btn" onclick="toggleHide()">Show/Hide</button>
+    <script>
+
+        // mouse agar text pe aya to warning aayegi
+        let para = document.getElementById('para');
+        para.addEventListener('mouseover',function run()
+        { //yha fun likh dege mouse wala
+            alert('Mouse Inside hai');
+        });
+
+
+
+        para.addEventListener('mouseout',function run()
+        { //yha fun likh dege mouse wala
+            alert('Mouse outside hai ab');
+            // alert ki jgah console..log bhi use kar sakte h agar console me print krvani h to
+        });
+
+
+
+        // hide function bnayege
+        function toggleHide()
+        {
+            // let btn = document.getElementById('btn');
+            // let para = document.getElementById('para');
+
+            if(para.style.display != 'none')
+            {
+                para.style.display='none';
+            }
+            else
+            {
+                para.style.display = 'block';
+            }
+
+        }
+
+    </script>
+</body>
+</html>

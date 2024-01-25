@@ -1,0 +1,36 @@
+<!-- ye ek esa notation h jiski help se ham data transfer kar sakte hai -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Json</title>
+</head>
+<body>
+    <div class="container">
+        this is container
+    </div>
+    <script>
+        let jsonobj={
+            name: "punish",
+            channel:"kuchbhi",
+            friend: "noone",
+            food: "gollgappe"
+        }
+        console.log(jsonobj);
+
+        // is se hmare console me ye cheez string ban kar bhi aa jayegi
+        let myjsonstr = JSON.stringify(jsonobj);
+        console.log(myjsonstr);
+
+        // replace krne k liye
+        myjsonstr=myjsonstr.replace('punish','HoGyaReplace');
+        console.log(myjsonstr);
+
+        // ab string se wapis object me krna h
+        newjsonobj = JSON.parse(myjsonstr);
+        console.log(newjsonobj);
+
+    </script>
+</body>
+</html>

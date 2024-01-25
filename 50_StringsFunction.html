@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript String Functions</title>
+</head>
+<body>
+    <script>
+        // yha se sab start
+        var name = 'This is a string';
+        console.log(name);
+
+        // first occurance eof a substring
+        var position = name.indexOf('a');
+        console.log("position of a is " + position);
+
+        // last occurance eof a substring
+        position = name.lastIndexOf('string');
+
+        // Substring from a string
+        // slice negative values bhi le leta h
+        var substring  = name.slice(1,5);
+        console.log(substring);
+
+        var replaced = name.replace('This','yelo');
+        // orignal ni change hoyegi
+        console.log(replaced);
+
+        console.log(name.toLowerCase());
+        console.log(name.toUpperCase());
+
+        // + he use karlo
+        console.log(name.concat(' New String'));
+
+        var nva = "   ism space     aayega   ";
+        console.log(nva);
+
+        // ye wala start and end se space hta dega
+        console.log(nva.trim());
+
+
+        // strings me se characters ko kse extract karte h
+        var c = name.charAt(2);
+        console.log(c);
+
+
+        // slicing of string
+        console.log(name[12]);
+    </script>
+</body>
+</html>

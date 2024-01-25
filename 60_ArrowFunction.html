@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        THis is arrow function tutorial
+    </div>
+    <script>
+        function greet()
+        {
+            console.log('Good mrng');
+        }
+
+        greet();
+        // arrow function provide shortcut
+        
+        greet2 = () => console.log('shortcut hai ye');
+        greet2();
+
+        // let sum = (a,b) => {
+        //     return a+b;
+        // }
+
+        // hme console me jakr function k beech values dallni pde gi tabhi result aayega
+        let sum = (a,b) => a+b;
+
+        // value a dallo hame uska half mill jayega
+        let half = a => a/2;
+
+        let obj1 = {
+            greeting: "Good Mrng ",
+            names: ["as" , "dd" , "nd"],
+            speak()
+            {
+                this.names.forEach((student)=>
+                {
+                    console.log(this.greeting +"FUCK " + student);
+                })
+            }
+        }
+        obj1.speak();
+
+        // arrow function apne parent k this (->) ko leta h or agar hamne koi simple function use kia h to uska this hoga uska khud ka this
+    </script>
+
+</body>
+</html>

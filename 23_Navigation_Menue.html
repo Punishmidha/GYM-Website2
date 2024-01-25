@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation</title>
+    <style>
+        .navbar{
+           
+            background-color: rgb(2, 4, 4);
+            border-radius: 40px;
+            
+        }
+        .navbar ul{ 
+            overflow: auto;
+        }
+        .navbar li{
+            /* color isliye hatt gya kuki float krne pe parent me se overfloaw hojata h to neeche set kre ge use  */
+            float: left;
+            list-style: none;/*Bullets na aaye ek dusre k upr*/
+            margin: 20px 20px;
+        }
+        .navbar li a{
+            padding: 3px 3px;
+            text-decoration: none; /*underline bhgane k liye*/
+            color: rgb(229, 238, 245);
+        }
+        .navbar li a:hover{
+            color: red;
+            /* jese he cursor lekr jayege to red hojega */
+        }
+        .search{
+            float: right;
+            color: aliceblue;
+            padding: 20px 70px;
+        }
+    
+        .navbar input{
+            border: 2px solid black;
+            border-radius: 14px;
+            padding: 3px 4px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact us</a></li>
+                <div class="search">
+                    <input type="text" name="search" id="search" placeholder="Search here"> 
+                    <!-- ye search option krne k liye -->
+                </div>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>

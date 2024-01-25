@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Dancing+Script&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Dancing+Script&display=swap" rel="stylesheet">
+    <title>Allignment</title>
+</head>
+<style>
+    body{
+        background-color:#afc5d4 ;
+    }
+    /* agar ham padding change krege to width b change hoyegi automatically */
+    /* to avoid this */
+    *{
+        box-sizing: border-box; 
+    }
+    .container{
+        width: 900px;/*ab is se hmara pura box left me hojega to isliye hm center me krne k liye margin auto lgayege */
+        /* background-color: aqua; */
+        border: 20px solid rgb(57, 5, 109);
+        margin: 40px auto;/*y se dedi or x se auto(center)*/
+
+    }
+    .items{
+        background-color: #6e8db5;
+        border: 6px solid #213555;
+        margin: 2px 1px;
+        padding: 12px 12px;
+    }
+    #fruit{
+        float: left; 
+        width: 48%; 
+
+
+    }
+    #computer{
+    
+        font-family: 'Caveat', cursive;
+        font-family: 'Dancing Script', cursive;
+        float: left; /*ye wala left hojega or bache hue iske right aajayege*/
+        width: 48%;
+        
+    }
+    #stationary{
+        font-family: 'Caveat', cursive;
+        font-family: 'Dancing Script', cursive;
+        font-family: 'Lilita One', cursive;
+        /* float: left;  */
+        width: 100%;
+        clear: left;
+    }
+    p,h1{
+
+        text-align: justify;/*box me text ko set krdega */
+
+    }
+    /* clear left lgane pe mtlb jitne bhi float left elemetns hai isse overlap ni hoge or clear right lgane pe right wala overlap ni kr skta is se or both me dono ni kr skte*/
+</style>
+<body>
+    <div class="container">
+        <div id="fruit" class="items">
+            <h3>Fruits</h3>
+            <!-- p#fruitspara.para is se ikha jayega direct -->
+            <p id="fruitspara" class="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae, eos nemo quasi quisquam accusantium suscipit aspernatur veniam blanditiis. Enim rerum consequatur commodi itaque quasi cumque neque labore quibusdam consequuntur molestiae Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae, ducimus veritatis? In consectetur, iusto quis eius corrupti quod quisquam? Ad, omnis! Fugiat eaque voluptatum illo suscipit nulla provident earum? Itaque ullam beatae dolores nisi..</p>
+
+        </div>
+        <div id="computer" class="items">
+            <h3>computer</h3>
+            <p id="computerspara" class="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae, eos nemo quasi quisquam accusantium suscipit aspernatur veniam blanditiis. Enim rerum consequatur commodi itaque quasi cumque neque labore quibusdam consequuntur molestiae Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis asperiores quod veritatis cum sapiente ipsam laudantium, fuga dolores deleniti aliquam consectetur eveniet? Quos hic aperiam, molestias earum facilis minus tempore suscipit corporis. Nulla, necessitatibus?</p>
+
+        </div>
+        <div id="stationary" class="items">
+            <h3>stationary</h3>
+            <p id="stionaryspara" class="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae, eos nemo quasi quisquam accusantium suscipit aspernatur veniam blanditiis. Enim rerum consequatur commodi itaque quasi cumque neque labore quibusdam consequuntur molestiae.</p>
+
+        </div>
+    </div>
+    
+</body>
+</html>
+<!-- floats se acha flexbox use krege baad me -->

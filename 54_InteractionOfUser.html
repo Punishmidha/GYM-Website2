@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEssage to user</title>
+</head>
+<body>
+    <div class="container">
+        this is a page
+    </div>
+    <script>
+        // alert -> it is in-browser js - doesnot return anything
+        // it is a function jis se hmari website pe ek msg pop up hota h
+        alert("pop up hoga ye")
+
+        //prompt->user se kuch puchna chahte h prompt se hoga ye  ... right me khali b dia taaki default rhe vo sab
+        let name = prompt("What is u name","")
+        console.log("hello " + name); // console me output aajegi
+
+        // confirm-> ...warninf dene k liye user ko
+        let deletepost = confirm("do you really want to delete post")
+
+        if(deletepost)
+        {
+            // code to delete post
+            console.log("your post is deleted: ")
+        }
+        else
+        {
+            console.log("Not deleted");
+
+        }
+    </script>
+    
+</body>
+</html>

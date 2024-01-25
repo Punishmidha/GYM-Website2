@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Property</title>
+    <style>
+        /* display inline matlab jitna element h utni badi space lele ga */
+        /* display block matlb uski width set kr skte hai */
+        /* kisi element ko  inline rkhna chahte h or block me bhi rkhna chahte h use tab use krte h inline block */
+
+        body{
+            background-color: rgb(181, 210, 235);
+        }
+        header{
+            border: 5px solid rgb(181, 210, 235); 
+            /* margin: auto;
+            /* margin auto hmare element ko center kr deti h par ye hua kyu nhi??
+            header hmara block element h or block elements ki ham width set kr skte h */
+            /* to ham width se set kre ge 
+            width: 45%; */
+        }
+        img{
+            /* margin or block se image ko border k beech me le aaye...image ki display inline hoti h to use block kia pehle  */
+            margin: auto;
+            display: block;
+            width: 100px;
+           
+        }
+        h3{
+            margin: 0px;
+            /* heading jud jayegi logo sath ab margin se */
+            text-align: center;
+            
+
+        }
+        .box{
+            background-color: rgb(206, 215, 234);
+            border: 4px solid rgb(17, 17, 19); 
+            margin-top: 6px;
+            border-radius: 40px;
+            width: 33%; 
+            /* box sizing border box krne se hmari width including margin anf padding vhi rehti h jo hmne di h
+            nito margin padding hmari total width ko change kr deti h */
+            display: inline-block; /*horizental hojege...width bhi deni pade gi*/
+            box-sizing: border-box;
+            /* margin-left: 18px; */
+            
+
+        }
+
+       
+    </style>
+</head>
+<body>
+    <header class="top">
+        <img src="https://www.kasandbox.org/programming-images/avatars/purple-pi.png
+        " alt="">
+        <h3>Welcome to my blog</h3>
+    </header>
+    <div class="container">
+        <div class="box">
+            <h4 class="heading">Heading</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum fugiat velit eligendi, fugit unde, architecto explicabo ratione sequi ut consectetur recusandae odio dicta totam corporis voluptates doloribus, reprehenderit asperiores quis?</p>
+        </div>
+        <div class="box">
+            <h4 class="heading">Heading</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum fugiat velit eligendi, fugit unde, architecto explicabo ratione sequi ut consectetur recusandae odio dicta totam corporis voluptates doloribus, reprehenderit asperiores quis?</p>
+        </div>
+        <div class="box">
+            <h4 class="heading">Heading</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum fugiat velit eligendi, fugit unde, architecto explicabo ratione sequi ut consectetur recusandae odio dicta totam corporis voluptates doloribus, reprehenderit asperiores quis?</p>
+        </div>
+    </div>
+</body>
+</html>

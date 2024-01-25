@@ -1,0 +1,95 @@
+<!-- very important topic -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-Box</title>
+    <style>
+        .container{
+            height: 444px;
+            width: 100%;
+            border: 2px solid rebeccapurple;
+            /*Intitalize the container for flexbox */
+            display: flex;/*flexbox k liye*/
+
+            /* flex properties for flex container */
+             flex-direction: row;
+            flex-direction: column;
+            flex-direction: row-reverse;
+            flex-direction: column-reverse; 
+
+            flex-wrap: wrap;/*jese he site ko chota bda kre ge to ye boxes next line m aate jayege*/
+
+            /* isme ulta wrap hota jata hai 
+            flex-wrap: wrap-reverse; */
+
+            /* is se reverse or wrap ek sth hoyege
+            flex-flow: row-reverse wrap; */
+
+            justify-content: center;/*hmari cheeze center me kar dega*/
+            
+            justify-content: space-between;/*hmari cheezo k beech me brabr ka space dede ga
+            not in sides */
+
+            justify-content: space-evenly;/*isme sab k beech me space brabr hota hai include side wale bhi*/
+
+            justify-content: space-around;/*har box ko uski space milege or add hojegi..like sabse side walo ki 20 h left side or rightside 2 box ki mill jayegi or 40 hojegi isliye beech me space jada or side me kam hota h space like padding ki trah*/
+
+            align-items: center;/*verticaly center kr deta hai*/
+            align-items: end; /*neeche kar deta h*/
+            align-items: flex-start;/*upr lkr deta h..ye default hota h*/
+
+            align-items: stretch;/*site choti badi krne pe bhi sab k beech me gap same rhega*/
+
+        }
+        .item{
+            width: 100px;
+            height: 100px;
+            background-color: rgb(159, 189, 223);
+            border: 2px solid rgb(115, 56, 243);
+            margin: 10px;
+            padding: 3px;
+            
+        }
+
+        #BOX-1{
+            /* flex properties for a flex item */
+            /* jitna jada order utni peeche/late show hoga */
+            order: 2;
+
+            /* jisko flex grow dedia to jese jese ham site badi kare ge vo boht jaldi se bade ga bakio k comperative */
+            flex-grow: 3 ; /*mtlb 3 guna tez bade ga bakio k comparisiom or negative numbers invalid hote h isme*/
+
+            /* jisko jitna jada vo utni jaldi chota hoga jab site choti karege */
+            flex-shrink: 2;
+
+            /* when flex-direction is set to row flex-basis will control width  */
+            /* when flex-direction is set to column flex-basis will control height  */
+            flex-basis: 321px;
+
+            /* in sbko ek sath 
+             flex: grow shrink basis*/
+            flex: 2 2 344;
+
+            /* IMPORTANT */
+            /* ye sabse jada use krege kisi ek particular box k liye  ye box ko center me krne k liye ya end me krne k liye ya khi or*/
+
+            align-self: flex-start;
+            align-self: flex-end;
+            align-self: center;
+        } 
+    </style>
+</head>
+<body>
+    <h1>This is a FlexBox</h1>
+    <div class="container">
+        <div class="item" id="item-1">BOX-1</div>
+        <div class="item" id="item-2">BOX-2</div>
+        <div class="item" id="item-3">BOX-3</div>
+        <div class="item" id="item-4">BOX-4</div>
+        <div class="item" id="item-5">BOX-5</div>
+        <div class="item" id="item-6">BOX-6</div>
+    </div>
+</body>
+</html>

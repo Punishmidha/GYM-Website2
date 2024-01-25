@@ -1,0 +1,51 @@
+<!-- iska mtlb h ki dheere dheere cheeze change krna -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box {
+            display: flex;
+            height: 200px;
+            width: 200px;
+            background-color: aqua;
+            justify-content: center;
+            align-items: center;
+
+            /* iska mtlb h ki vo konsi property h jo mai transition krna chahta hu */
+            transition-property: background-color;
+            /* sab pe lgani h transition to.. */
+            transition-property: all;
+
+            /* mtlb hmara b-color change hone me itna time lgega...upr isliye transition-property me b-color dalla */
+            transition-duration: 1s;
+
+            /* pehle slow fir fast */
+            /* transition-timing-function: ease-in; */
+
+            /* transition shortend property bhi hoti h ki ek sth likhdo sab */
+        }
+        #box:hover{
+            background-color: black;
+            color: papayawhip;
+            border: 10px;
+            border-radius: 50%;
+            border-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>This is tutorial</h3>
+    <div class="container">
+        <div id="box">
+            This is my box
+            <img src="./39_project_2nd/logo.jpg" alt="">
+        </div>
+    </div>
+</body>
+
+</html>

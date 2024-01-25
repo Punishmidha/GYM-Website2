@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on Selectors</title>
+    <!-- pehle to background colour vgera ye sab kia tha pr ab advance kre ge thda -->
+    <style>
+        h1{
+            background-color: red;
+            color: black;
+            font-weight: bold;
+            text-align: center;
+        }
+        div p{/*kisi b div k andr kitne bhi p ho ye sirf un sab pe lgegi property*/
+            color: rgb(0, 174, 255);
+            font-weight: bold;
+            /* last wala kyu ni hua...kuki hmne btaya tha ki sirf division k andr wale p ko color do */
+        }
+        div li p{
+            background-color: bisque;
+            /* div me li me p pe hoga bs */
+        }
+
+        /* is se direct element aayega for eg..div k andr direct p pe effect ho bs ese ni ki div k andr list orus list me para ..ispe effect ni hoga...bs direct wale pe effect hoga  */
+        div > p{
+            background-color: chartreuse;
+        }
+
+        /* peechla sibling div ho or uske direct bad p ho */
+        div+p{
+            background-color:aqua;
+        }
+    </style>
+</head>
+<body>
+    <h1>This is more on selectors</h1>
+    <div class="container">
+        <div class="row">
+            <ul>
+                <li class="item"> <p>ispe bhi hojega laagu..kuki ye bhi to andr he h div me p  k</p></li>
+            </ul>
+            <p>This is a paragraph</p>
+        </div>
+        <p>This is another paragraph</p>
+    </div>
+    <p>This is outermost paragraph</p>
+</body>
+</html>

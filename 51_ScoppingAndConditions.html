@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope and conditions</title>
+</head>
+<body>
+    <!-- div > ul > li > {item-$}*7 -->
+    <div>
+        <ul>
+            <li>Item-1</li>
+            <li>Item-2</li>
+            <li>Item-3</li>
+            <li>Item-4</li>
+            <li>Item-5</li>
+            <li>Item-6</li>
+            <li>Item-7</li>
+        </ul>
+    </div>
+    <script>
+        var string1 = 'this is a string';
+        var string2 = 'this is a string2';
+        console.log(string1);
+
+        // var jada preferable ni mana jata isliye let he use kare ge ham iska scope level pe block hota hai or isme ek level ko ek he bar declare kar sakte h
+
+        let a = 'u';
+        console.log(a);
+        {
+            let a = 'ed';
+            // is a ka  scope is block me he rahega koi warning ni aayegi  is se bahr jaate he iska let scope khatam hojega but bahr do bar likhege let ko same variable k liye to warning aayegi 
+            console.log(a);
+
+        }
+
+        // const ko change ni kar sakte vo hmesha same rahega baaki kisi ko b kar sakte change
+        const x = "permanent same";
+        console.log(x);
+
+        let age = 34;
+        if(age > 13)
+        {
+            console.log("haa bda h: ");
+
+        }
+        else
+        {
+            console.log("nhi chota h: ");
+        }
+
+        // ye use hoga jab jese kisi form me name me usne phone no dalla h to invalid likha aajega
+
+        // switch bhi use hoge
+
+        const cups = 4;
+        // cups = kuch bhi ni kar skta kuki constant use kia h  ese direct ni change kar sakte
+        switch (cups) {
+            case 4:
+            console.log("value of cups is 4: ")
+                break;
+        
+            default:
+            console.log("value doesnot match: ")
+                break;
+        }
+        
+
+
+    </script>
+</body>
+</html>
